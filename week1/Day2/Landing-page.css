@@ -1,0 +1,38 @@
+
+
+.top{
+    background-color: white;
+    
+    
+   
+}
+
+.top a{
+    float: right;
+    block-size: auto;
+    
+}
+
+.middle{
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   background-image: url(pexels-pok-rie-1655166.jpg);
+   background-position: center;
+   background-attachment: fixed;
+   height: 200px;
+
+
+
+}
+
+.buttom{
+    background-color: bisque;
+    size: 100px;
+}
+
+i.{
+    height: 200px;
+}
+
+

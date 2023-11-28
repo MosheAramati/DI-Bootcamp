@@ -1,0 +1,38 @@
+
+h1 {
+        color: burlywood;
+    }
+
+.t1{
+    border-collapse:collapse ;
+    border: 1px solid rgb(50, 18, 18)
+   
+}
+thead, th { 
+    
+    border: 1px solid salmon;
+}
+tr, td {
+    border: 1px solid rgb(91, 3, 222)
+}
+
+ol > li{
+    color: blueviolet;
+}
+
+article + p {
+    background-color: rgb(218, 196, 255);
+}
+.rect{
+    display: inline-block;
+    width: 50px;
+    height: 100px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}

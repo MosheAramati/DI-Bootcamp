@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- static = default
+        relative = 
+        absolute =
+        fixed = stays fixed related to the body
+        sticky =  stays fixed when the scrolling reach the div-->
+
+    <style>
+        .parent {
+            border: solid 2px black;
+            background-color: grey;
+            height: 25vh;
+            width: 70vw;
+            margin: 40px;
+            position: relative
+
+
+            ;
+        }
+
+        .parent div{
+            height: 150PX;
+            width: 150PX;
+            text-align: center;
+        }
+
+        .blue {
+            background-color: blue;
+            position: absolute;
+            top: 1vh;
+            left: 1vw;
+
+    
+
+            
+            
+        }
+
+       
+        .orange {
+            background-color: orange;
+            position: absolute;
+            top: 2vh;
+            left: 2vw;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="parent"> PARENT
+        <div class="blue">blue</div>
+        <div class="orange">orange</div>
+       
+    </div>
+
+
+</body>
+</html>
