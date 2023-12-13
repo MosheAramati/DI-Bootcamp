@@ -1,0 +1,57 @@
+.body{
+    margin: 0;
+
+    font-family: 'Saira Extra Condensed', sans-serif;
+
+    position: relative;
+}
+
+.left{    
+    padding: 10px;
+    background-color: lightgrey;
+    width: 50vw;
+    height: 100vh;
+   
+
+    position: absolute;
+    right: 50%;
+    top: 0%;
+
+    text-align: center;   
+   
+
+}
+
+.remember{
+
+    margin-right: 0;
+}
+
+.list{
+    list-style: none;
+    
+}
+
+ ul li{
+    display: inline;
+ }
+
+
+.right{
+    color: white;
+   
+    background-color: blueviolet;
+    width: 50vw;
+    height: 100vh;
+
+    float: inline-end;
+   
+
+    position: absolute;
+    left: 50%;
+    top: 0%;
+
+    text-align: center;
+    
+   
+}

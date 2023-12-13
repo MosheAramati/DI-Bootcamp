@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flex-ex1-style.css">
+
+    <title>Document</title>
+</head>
+
+<style>
+
+.body{
+
+    padding: 2px;
+    margin: 2px;
+
+
+}
+
+
+
+.outer{
+    border: 5px solid;
+    background-color: gray;
+    height: 450px;
+    width: 900px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    
+
+
+}
+
+.inner{
+    background-color: yellow;
+    
+    
+
+    
+}
+
+#inner1{
+
+    height: 50px;
+    width: 900px; 
+    
+}
+
+#inner2{
+
+
+
+height: 150px;
+width: 450px; 
+
+}
+
+#inner3{
+
+height: 50px;
+width: 900px; 
+
+}
+    
+.outer2{
+    border: 5px solid;
+    background-color: gray;
+    height: 450px;
+    width: 900px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    
+    
+
+
+}
+
+.inner2{
+    background-color: yellow;
+    flex: 1;
+
+    
+
+    
+}
+
+
+#inner21{
+
+height: 50px;
+width: 900px; 
+
+}
+
+#inner22{
+
+
+
+height: 150px;
+width: 225px; 
+align-self: self-end;
+
+}
+
+#inner23{
+
+height: 50px;
+width: 900px; 
+}
+
+.nav{
+    padding: 2%;
+     border: solid;
+     display: flex;
+     text-align: center;
+    
+     
+}
+
+.item1{
+
+    background-color: blueviolet;
+    flex: 1;
+
+}
+
+.item2{
+
+    background-color: blue;
+    flex: 5;
+
+}
+
+.item3{
+
+    background-color: red;
+    flex: 5;
+
+}
+
+.outer3{
+    border: 5px solid;
+    background-color: gray;
+    height: 450px;
+    width: 900px ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+
+
+}
+
+.inner3{
+    background-color: yellow;
+    flex: 1;
+    
+    
+
+    
+}
+
+#inner31{
+
+width:450px ;
+
+}
+
+#inner32{
+
+    width:900px ;
+    
+}
+
+#inner33{
+
+width:450px ;
+
+}
+
+
+
+</style>
+
+<body>
+    <div class="outer">
+        <div class="inner" id="inner1">1</div>    
+        <div class="inner" id="inner2">2</div>
+        <div class="inner" id="inner3">3</div>        
+    </div>
+
+    <br>
+
+    <div class="outer2">
+        <div class="inner2" id="inner21">1</div>    
+        <div class="inner2" id="inner22">2</div>
+        <div class="inner2" id="inner23">3</div>        
+    </div>
+
+    <br>
+
+    <nav class="nav">
+        
+        <div class="item1" id="item1" > Logo </div>
+        <div class="item2" id="item2">Team</div>
+        <div class="item3" id="item3">Product</div>
+    </nav>
+
+    <br>
+
+    <div class="outer3">
+        <div class="inner3" id="inner31">1</div>    
+        <div class="inner3" id="inner32">2</div>
+        <div class="inner3" id="inner33">3</div>        
+    </div>
+
+
+
+   
+</body>
+</html>

@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+   
+}
+
+.nav{
+    background-color: black;
+    height: 7vh;
+    width: 100vw;
+    position: absolute;
+}
+
+#icon{
+   margin-left: 30px;
+   margin-top: 8px;
+}
+
+.link{
+    float: inline-end;
+    position: relative;
+    top: 15px;
+    right: 50px;
+
+   
+    color: white;
+    text-decoration: none;
+    font: optional;
+}
+.link:hover{
+    color: bisque;
+}
