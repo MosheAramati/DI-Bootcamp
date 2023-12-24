@@ -179,11 +179,13 @@ const details = {
 // for (let key in details){
 //     console.log(JSON.stringify(details))
 // }
+let str = []
 
 for (let key in details){
-    console.log([key + " " + details[key]])
+   // console.log([key + " " + details[key]])
+   str.push([key + " " + details[key]]);
 }
-console.log (details)
+console.log (str.join(" "))
 
 // Exercise 7 : Secret Group
 // Instructions
@@ -194,8 +196,12 @@ const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
 
 names.sort();
 
-console.log(names[0][0] + names[1][0] + names[2][0]+ names[3][0]+ names[4][0]+ names[5][0] );
+//console.log(names[0][0] + names[1][0] + names[2][0]+ names[3][0]+ names[4][0]+ names[5][0] );
 
+let secretName = []
 for(let i=0;i<names.length;i++){
-    console.log(names[i][0]);
+ //   console.log(names[i][0]);
+    secretName.push(names[i][0]);
 };
+    console.log (secretName.join(""))
+

@@ -26,9 +26,9 @@ while (count <= 6) {
 let star = 6; 
 
 for (let i = 0; i < star; i++) {
-    let row = ' ';
+    let row = " ";
     for (let j = 0; j <= i; j++) {
-        row += '*  ';
+        row += "*  ";
     }
 
     console.log(row);
