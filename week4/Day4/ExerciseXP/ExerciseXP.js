@@ -100,21 +100,71 @@
 const allBooks = [
     {
       title: "Hunger Games",
-      author: "Unknown",
-      image: "https://example.com/image1.jpg",
+      author: "Suzanne Collins ",
+      image:  "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/614SwlZNtJL._AC_UF1000,1000_QL80_.jpg",
       alreadyRead: false
     },
     {
-      title: "Another Book",
-      author: "Some Author",
-      image: "https://example.com/image2.jpg",
+      title: "Hunger Games 2",
+      author: "Suzanne Collins",
+      image: "https://upload.wikimedia.org/wikipedia/en/a/a2/Catching_Fire_%28Suzanne_Collins_novel_-_cover_art%29.jpg",
       alreadyRead: true
     }
   ];
 
-// Initiate the array with 2 books of your choice (ie. Add manually 2 books objects in the array)
-// Requirements : All the instructions below need to be coded in the js file:
+
+
+//3. Initiate the array with 2 books of your choice (ie. Add manually 2 books objects in the array)
+//4. Requirements : All the instructions below need to be coded in the js file:
 // Using the DOM, render the books inside an HTML table (the HTML table must be added to the <div> created in part 1).
+const div = document.getElementsByTagName("div")
+const table = document.createElement("table")
+const tr = document.createElement("tr")
+const header1 = document.createElement("th")
+header1.textContent = ("Title")
+header1.style.border= ("2px solid black");
+const header2 = document.createElement("th")
+header2.textContent = ("Author")
+header2.style.border= ("2px solid black");
+const header3 = document.createElement("th")
+header3.textContent = ("Picture")
+header3.style.border= ("2px solid black");
+
+div[0].appendChild(table)
+table.appendChild(tr)
+tr.appendChild(header1)
+tr.appendChild(header2)
+tr.appendChild(header3)
+
+allBooks.forEach(book => {
+    const tr2 = document.createElement("tr");
+    const td1 = document.createElement("td")
+    td1.textContent = (book.title)
+    td1.style.border= ("2px solid black");
+    const td2 = document.createElement("td")
+    td2.textContent = (book.author)
+    td2.style.border= ("2px solid black");
+    const td3 = document.createElement("td")
+    const image = document.createElement("img")
+    image.src= book.image
+    image.style.width="100px"
+    td3.appendChild(image)
+    td3.style.border= ("2px solid black");
+
+
+    div[0].appendChild(table)
+    table.appendChild(tr2)
+    tr2.appendChild(td1)
+    tr2.appendChild(td2)
+    tr2.appendChild(td3)
+
+    if (book.alreadyRead ){
+        td1.style.background="red";
+        td2.style.background="red";
+    }
+
+});
+
 // For each book :
 // You have to display the book’s title and the book’s author.
 // Example: HarryPotter written by JKRolling.
