@@ -39,23 +39,26 @@ function song() {
     let numberOfBottles = parseInt(prompt("How many bottles do you want to start with"));
     
 
-    for (let i = 1; numberOfBottles > 0; i++) {
+    for (let i = 1; numberOfBottles >= 0; i++) {
         console.log(`${numberOfBottles} bottles of beer on the wall`);
         console.log(`${numberOfBottles} bottles of beer`);
 
-        if(i > 0){
+        if(numberOfBottles <= 0){
             console.log(`Take ${numberOfBottles +i} down, pass them around`);
             console.log("No more bottles of beer on the wall");
         }
 
+        else{
+            console.log(`Take ${i} down, pass ${i === 1 ? 'it' : 'them'} around`);
         }
 
-        console.log(`Take ${i} down, pass ${i === 1 ? 'it' : 'them'} around`);
+        
 
         numberOfBottles -= i;
 
-        console.log(`${numberOfBottles} bottles of beer on the wall`);
+        // console.log(`${numberOfBottles} bottles of beer on the wall`);
     }
+}
 
     
 song();
