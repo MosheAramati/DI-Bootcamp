@@ -90,6 +90,7 @@
 
 function onDragStart4square(event){
     console.log("start")
+    event.dataTransfer.setData("text/plain", event.target.id)
 }
 
 function onDragEnd4square(event){
@@ -101,7 +102,17 @@ function onDrag4Square(event){
 
 }
 
+function onDragOver4YellowSquare(event){
+    event.preventDefault()
+}
 
+function onDrop4YellowSquare(event){
+    const id =  event.dataTransfer.getData("text/plain")
+
+    const square = document.getElementById(id)
+
+    event.target.appendChild(square)
+}
 
 
 
