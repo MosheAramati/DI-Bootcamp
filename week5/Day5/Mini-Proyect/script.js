@@ -6,15 +6,37 @@ const sideBar = document.querySelector("#sideBar");
 const clear = document.querySelector("#clear");
 
 let color = null;
+let isMouseDown = false;
 
 for (i = 0; i < color_count; i++) {
-    let div = document.createElement("div");
+    const div = document.createElement("div");
     div.style.backgroundColor = generateRandomColor();
     div.addEventListener("click", function(event){
         color = event.target.style.backgroundColor;
     })
-    sideBar.appendChild(div);
+    sideBar.appendChild(div);   
 }
+
+
+const squares = document.querySelectorAll("#main  div")
+
+squares.forEach(square =>{
+    square.addEventListener("mousedown", function() {
+        isMouseDown = true;
+        this.style.backgroundColor = color;
+    });
+
+    square.addEventListener("mouseover", function() {
+        if (isMouseDown) { 
+            this.style.backgroundColor = color;
+        }
+    });
+
+    square.addEventListener("mouseup", function() {
+        isMouseDown = false;
+    });
+
+});
 
 function generateRandomColor(){
     let letters = "0123456789ABCDEF"
@@ -26,5 +48,14 @@ function generateRandomColor(){
     return color;
 }
 
-let col = 70
-let ro
+clear.addEventListener("click", function(){
+    squares.forEach(square => {
+        square.style.backgroundColor = 'white';
+    });
+});
+
+
+
+
+
+

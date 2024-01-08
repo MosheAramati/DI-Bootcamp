@@ -1,0 +1,32 @@
+body{
+    background-color: red;    
+}
+
+ul{
+    list-style: none;
+    background-color: white;
+}
+
+li{
+    display: flex;
+    gap: 5px;
+}
+
+li * {
+    margin: 0;
+    padding: 0;
+   position: relative;
+}
+
+li i {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+li *::before{
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+}
