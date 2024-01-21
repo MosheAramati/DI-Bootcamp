@@ -1,0 +1,46 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr; ;
+    padding: 0;
+    margin: 0;
+
+}
+
+#window {
+    border: 1px solid #ccc;
+    grid-row: 1;
+    content: center;
+    background-color: blueviolet;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+
+#about {
+    border: 1px solid #ccc;
+    grid-row: 2;
+    background-color: bisque;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+
+#addQuote {
+    border: 1px solid #ccc;
+    grid-row: 3;
+    background-color: aqua;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+
+#search {
+    border: 1px solid #ccc;
+    grid-row: 4;
+    background-color: antiquewhite;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+
+}

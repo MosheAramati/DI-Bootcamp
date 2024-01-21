@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mini Proyect</title>
+</head>
+<body>
+
+    <div id="window">
+
+    <h2>The Quoter</h2>
+        <p id="quote"></p>
+        <button id="button">Generate Quote</button>
+        <button id="like">Like</button>
+    </div>
+
+        <br>
+
+    <div id="about">
+        <h4>About the quote: (in console ->)</h4>
+
+        <button id="numberCharacterSpaces">Number of characters with spaces</button>
+        <br>
+        <button id="numberCharacterNoSpaces">Number of characters without spaces</button>
+        <br>
+        <button id="numberWords">Number of words</button>
+    </div>    
+
+       <br>
+
+    <div id="addQuote">    
+       <h4>Add yor favorite quote:</h4>
+
+        <label for="newQuote">Quote:</label>
+        <input type="text" id="newQuote" name="newQuote" >
+
+        <label for="newAuthor">Author:</label>
+        <input type="text" id="newAuthor" name="newAuthor" >
+
+        <button id="createQuote">Create Quote</button>
+    </div>
+    
+    <form id="search">
+        <h4>Search by author:</h4>
+
+        <input type="text" id="searchAuthor">
+
+        <button id="SearchB">Search</button>
+
+        <div id="searchedQuotes">
+
+        </div>
+
+        <button id="previous">Previous</button>
+        <button id="next">Next</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
