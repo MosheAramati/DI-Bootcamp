@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--GET, POST-->
+    <form method="POST">
+        Name: <input name="name">
+        Email: <input name="email">
+        <input type="submit" value="Send">
+    </form>
+
+    <h2>Get all Users</h2>
+    <form method="GET" action="https://jsonplaceholder.typicode.com/users">
+        <input type="submit" value="Get all Users">
+    </form>
+
+    <h2>Get one User</h2>
+    <form method="GET" action="https://jsonplaceholder.typicode.com/users">
+        <input type="number" name="id">
+        <input type="submit" value="Get one user">
+    </form>
+
+    <h2>Google Search</h2>
+    <form method="GET" action="https://www.google.com/search">
+        <input name="q">
+        <input type="submit" value="Search Google">
+    </form>
+
+    <h2>Add Post</h2>
+    <form method="post" action="https://jsonplaceholder.typicode.com/posts">
+        Title: <input name="title"><br>
+        Body: <input name="body"><br>
+        Author: <input name="userId"><br>
+        <input type="submit" value="Add Post">
+    </form>
+<!-- 
+1. send a post request to ... 
+2. name, email, username
+3.submit the form
+ -->
+
+ <h2>Add Post exercise</h2>
+ <form method="post" action="https://users-18kl.onrender.com/user">
+     Name: <input name="name"><br>
+     Email: <input name="email"><br>
+     Username: <input name="username"><br>
+     <input type="submit" value="Add Post">
+ </form>
+
+ <div id="root"></div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
