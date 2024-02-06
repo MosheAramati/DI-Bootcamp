@@ -6,7 +6,7 @@
 //- and returns a boolean that indicates whether or not the first string is an anagram of the second string.
 
 function isAnagram(str1, str2) {
-    str1 = str1.toLowerCase().replace(/\s/g, ''); // Remove spaces and make lowercase
+    str1 = str1.toLowerCase().replace(/\s/g, ''); 
     str2 = str2.toLowerCase().replace(/\s/g, '');
   
     if (str1.length !== str2.length) {
@@ -23,5 +23,5 @@ function isAnagram(str1, str2) {
     return Object.values(charCounts).every(count => count === 0);
   }
 
-  console.log(isAnagram('Astronomer', 'Moon starer'));  // true
+  console.log(isAnagram('Astronomer', 'Moon starer')); // true
   console.log(isAnagram('Astronomer', 'Moon star')); // false
