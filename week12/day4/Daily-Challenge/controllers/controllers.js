@@ -37,19 +37,12 @@ const login = (req, res)=> {
     const { username, password } = req.body;
     _login(username)
     .then(data =>{
-        res.json(data)
-    })
-    .then(obj =>{
-    console.log(obj)
-    // if (obj.username != username){
-    //     return res.status(404).send('User not found');
-    // }
-    // bcrypt.compare(password, obj.password, (err, result) => {
-    //     if (err || !result) {
-    //         return res.status(401).send('Invalid username or password');
-    //     }
-    //     res.send('Login successful');
-    // });
+        console.log(data);
+        if (data.length== 0){
+            res.status(401).json({message:"wrong login credentias"})
+        }else {
+            res.status(200).json({message:"welcome"})
+        }
     })
     .catch(err=>{
         console.log(err)
